@@ -26,7 +26,7 @@ HireFlow offers a calm, intentional hiring platform. Candidates can register, lo
 ## Tech Stack
 * **Frontend**: React.js, JavaScript, Vite, Tailwind CSS v4, React Router v6, Axios
 * **Backend**: Python, FastAPI, SQLAlchemy, Pydantic, JWT Authentication, Passlib (with bcrypt)
-* **Database**: MySQL (falls back automatically to SQLite for easy offline testing)
+* **Database**: MySQL
 * **Tools**: Git, VS Code, Postman
 
 ## Project Structure
@@ -127,7 +127,7 @@ HireFlow/
 ### Prerequisites
 * Python 3.8+
 * Node.js (with npm)
-* MySQL Server (optional, falls back automatically to SQLite for easy setup)
+* MySQL Server
 
 ### Environment Variables
 Configure the backend environmental file by creating a `.env` file under `backend/`:
@@ -135,7 +135,6 @@ Configure the backend environmental file by creating a `.env` file under `backen
 DATABASE_URL=mysql+pymysql://username:password@localhost/hireflow
 SECRET_KEY=your_secret_key_here
 ```
-If `DATABASE_URL` is omitted, the backend will default to a local SQLite database (`backend/hireflow.db`) automatically.
 
 Configure the frontend environmental file by creating a `.env` file under `frontend/`:
 ```env
